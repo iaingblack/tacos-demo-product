@@ -1,4 +1,4 @@
-name: Build_and_Publish
+name: Build-and-Publish-Artifact
 
 on:
   push:
