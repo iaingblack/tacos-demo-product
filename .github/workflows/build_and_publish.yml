@@ -22,12 +22,12 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: go build -v ./...
+      run: go build -v ./product/...
 
     - name: Test
-      run: go test -v ./...
+      run: go test -v ./product/...
       
     - uses: actions/upload-artifact@v3
       with:
         name: tacos-product
-        path: ./product
+        path: ./product/product
